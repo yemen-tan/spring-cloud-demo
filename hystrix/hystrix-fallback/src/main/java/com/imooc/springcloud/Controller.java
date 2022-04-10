@@ -35,7 +35,7 @@ public class Controller {
     @HystrixCommand(
             fallbackMethod = "timeoutFallback",
             commandProperties = {
-               @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value="3000")
+                    @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "3000")
             }
     )
     public String timeout2(Integer timeout) {
@@ -48,6 +48,7 @@ public class Controller {
 
     @GetMapping("/cache")
     public Friend cache(String name) {
+//        HystrixRequestContext上下文定义缓存的范围，这里的范围是方法内，可以确保在改方法内只调用一次
         @Cleanup HystrixRequestContext context =
                 HystrixRequestContext.initializeContext();
 

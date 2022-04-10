@@ -33,7 +33,6 @@ public class Fallback implements MyService {
         return "success";
     }
 
-
     @Override
     public String sayHi() {
         return null;

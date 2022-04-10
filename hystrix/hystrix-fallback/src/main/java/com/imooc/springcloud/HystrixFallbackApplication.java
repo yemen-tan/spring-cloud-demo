@@ -13,6 +13,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
  */
 @EnableDiscoveryClient
 @SpringBootApplication
+// 发起feign调用才需要加此注解
 @EnableFeignClients
 @EnableCircuitBreaker
 public class HystrixFallbackApplication {
