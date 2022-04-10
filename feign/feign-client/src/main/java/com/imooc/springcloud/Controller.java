@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  * Created by 半仙.
+ * 这里用controller实现Iservice接口主要是为了兼顾给postman调用，controller充当了service实现类的作用
+ *
  */
 @RestController
 @Slf4j
@@ -29,7 +31,6 @@ public class Controller implements IService {
     }
 
     @Override
-
     public Friend sayHiPost(@RequestBody Friend friend) {
         log.info("You are " + friend.getName());
         friend.setPort(port);

@@ -22,7 +22,7 @@ import java.util.TreeMap;
  */
 @NoArgsConstructor
 public class MyRule extends AbstractLoadBalancerRule implements IRule {
-
+ 
 
     @Override
     public void initWithNiwsConfig(IClientConfig iClientConfig) {
