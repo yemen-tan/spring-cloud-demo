@@ -39,6 +39,7 @@ public class Controller {
             }
     )
     public String timeout2(Integer timeout) {
+        /* 外部配置的超时时间是3000，myService.retry(）也有自己的超时时间，若这个时间小于外面的3000， myService.retry(timeout) 会优先超时*/
         return myService.retry(timeout);
     }
 
