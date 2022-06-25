@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 /**
- * Created by 半仙.
+ * Created by simon.
  */
 @FeignClient(name = "feign-client", fallback = Fallback.class)
 public interface MyService extends IService {

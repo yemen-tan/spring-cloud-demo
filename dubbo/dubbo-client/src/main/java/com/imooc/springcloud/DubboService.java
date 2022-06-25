@@ -4,7 +4,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.apache.dubbo.config.annotation.Service;
 
 /**
- * Created by 半仙.
+ * Created by simon.
  */
 @Service
 @Slf4j

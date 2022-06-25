@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * Created by 半仙.
+ * Created by simon.
  */
 @RestController
 @RequestMapping("/refresh")

@@ -12,7 +12,7 @@ import org.springframework.messaging.handler.annotation.Header;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
- * Created by 半仙.
+ * Created by simon.
  */
 @Slf4j
 @EnableBinding(value = {

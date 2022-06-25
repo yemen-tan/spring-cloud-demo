@@ -6,7 +6,7 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.cloud.config.server.EnableConfigServer;
 
 /**
- * Created by 半仙.
+ * Created by simon.
  */
 @SpringBootApplication
 @EnableConfigServer

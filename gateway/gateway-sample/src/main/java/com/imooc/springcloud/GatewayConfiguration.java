@@ -11,7 +11,7 @@ import org.springframework.http.HttpMethod;
 import java.time.ZonedDateTime;
 
 /**
- * Created by 半仙.
+ * Created by simon.
  */
 @Configuration
 public class GatewayConfiguration {

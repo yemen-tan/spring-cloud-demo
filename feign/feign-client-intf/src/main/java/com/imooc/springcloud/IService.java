@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 
 /**
- * Created by 半仙.
+ * Created by simon.
  */
 @FeignClient("feign-client")
 public interface IService {

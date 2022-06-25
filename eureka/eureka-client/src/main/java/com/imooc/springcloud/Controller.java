@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * Created by 半仙.
+ * Created by simon.
  */
 @RestController
 @Slf4j

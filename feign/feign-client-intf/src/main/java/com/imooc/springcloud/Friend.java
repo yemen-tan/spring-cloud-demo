@@ -3,7 +3,7 @@ package com.imooc.springcloud;
 import lombok.Data;
 
 /**
- * Created by 半仙.
+ * Created by simon.
  */
 @Data
 public class Friend {

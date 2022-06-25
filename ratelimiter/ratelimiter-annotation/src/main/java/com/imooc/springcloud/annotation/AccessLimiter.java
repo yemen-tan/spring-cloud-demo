@@ -3,7 +3,7 @@ package com.imooc.springcloud.annotation;
 import java.lang.annotation.*;
 
 /**
- * Created by 半仙.
+ * Created by simon.
  */
 @Target({ElementType.METHOD})
 @Retention(RetentionPolicy.RUNTIME)

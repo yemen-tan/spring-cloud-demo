@@ -18,7 +18,7 @@ import java.util.SortedMap;
 import java.util.TreeMap;
 
 /**
- * Created by 半仙.
+ * Created by simon.
  */
 @NoArgsConstructor
 public class MyRule extends AbstractLoadBalancerRule implements IRule {

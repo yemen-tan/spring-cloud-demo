@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * Created by 半仙.
+ * Created by simon.
  * 这里用controller实现Iservice接口主要是为了兼顾给postman调用，controller充当了service实现类的作用
  *
  */

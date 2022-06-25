@@ -6,7 +6,7 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 /**
- * Created by 半仙.
+ * Created by simon.
  */
 @SpringBootApplication
 @EnableDiscoveryClient

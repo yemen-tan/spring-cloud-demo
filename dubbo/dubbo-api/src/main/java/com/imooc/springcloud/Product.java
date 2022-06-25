@@ -6,7 +6,7 @@ import java.io.Serializable;
 import java.math.BigDecimal;
 
 /**
- * Created by 半仙.
+ * Created by simon.
  */
 @Data
 public class Product implements Serializable {

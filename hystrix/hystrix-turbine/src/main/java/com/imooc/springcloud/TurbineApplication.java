@@ -9,7 +9,7 @@ import org.springframework.cloud.netflix.hystrix.EnableHystrix;
 import org.springframework.cloud.netflix.turbine.EnableTurbine;
 
 /**
- * Created by 半仙.
+ * Created by simon.
  */
 @EnableDiscoveryClient
 @EnableHystrix

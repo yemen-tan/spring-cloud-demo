@@ -9,7 +9,7 @@ import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.data.redis.core.script.DefaultRedisScript;
 
 /**
- * Created by 半仙.
+ * Created by simon.
  */
 @Configuration
 public class RedisConfiguration {

@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
 /**
- * Created by 半仙.
+ * Created by simon.
  */
 @RestController
 public class Controller {

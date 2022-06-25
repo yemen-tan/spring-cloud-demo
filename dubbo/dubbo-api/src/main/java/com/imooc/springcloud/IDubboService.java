@@ -1,7 +1,7 @@
 package com.imooc.springcloud;
 
 /**
- * Created by 半仙.
+ * Created by simon.
  */
 public interface IDubboService {
 

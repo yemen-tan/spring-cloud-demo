@@ -6,7 +6,7 @@ import org.springframework.messaging.MessageChannel;
 import org.springframework.messaging.SubscribableChannel;
 
 /**
- * Created by 半仙.
+ * Created by simon.
  */
 public interface ErrorTopic {
 

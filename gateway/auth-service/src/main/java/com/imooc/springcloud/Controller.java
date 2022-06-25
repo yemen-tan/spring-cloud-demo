@@ -11,7 +11,7 @@ import static com.imooc.springcloud.AuthResponseCode.SUCCESS;
 import static com.imooc.springcloud.AuthResponseCode.USER_NOT_FOUND;
 
 /**
- * Created by 半仙.
+ * Created by simon.
  */
 @RestController
 @Slf4j

@@ -7,7 +7,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import zipkin.server.internal.EnableZipkinServer;
 
 /**
- * Created by 半仙.
+ * Created by simon.
  */
 @SpringBootApplication
 @EnableZipkinServer

@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 
 /**
- * Created by 半仙.
+ * Created by simon.
  */
 @SpringBootApplication
 public class RatelimiterApplication {

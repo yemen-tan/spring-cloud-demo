@@ -8,7 +8,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.cloud.openfeign.FeignClient;
 
 /**
- * Created by 半仙.
+ * Created by simon.
  */
 @EnableDiscoveryClient
 @SpringBootApplication

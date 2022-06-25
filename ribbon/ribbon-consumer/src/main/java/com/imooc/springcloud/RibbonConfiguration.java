@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * Created by 半仙.
+ * Created by simon.
  */
 @Configuration
 //@RibbonClient(name = "eureka-client", configuration = MyRule.class)

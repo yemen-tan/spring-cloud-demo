@@ -8,7 +8,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.ComponentScans;
 
 /**
- * Created by 半仙.
+ * Created by simon.
  */
 @EnableDiscoveryClient
 @SpringBootApplication
