@@ -9,17 +9,22 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Created by 半仙.
+ * Created by simon
+ * guava实现单机版客户端限流-令牌桶算法
+ * 单机半客户端限流的适用场景：单机资源敏感
+ * 单机半客户端限流的缺点：不是分布式限流，无法对数据库、缓存中间件等公用资源进行限流
  */
 @RestController
 @Slf4j
 public class Controller {
 
+    // 每秒钟产生2个令牌
     RateLimiter limiter = RateLimiter.create(2.0);
 
     // 非阻塞限流
     @GetMapping("/tryAcquire")
     public String tryAcquire(Integer count) {
+        // 每个请求消耗count个令牌
         if (limiter.tryAcquire(count)) {
             log.info("success, rate is {}", limiter.getRate());
             return "success";
@@ -32,6 +37,7 @@ public class Controller {
     // 限定时间的非阻塞限流
     @GetMapping("/tryAcquireWithTimeout")
     public String tryAcquireWithTimeout(Integer count, Integer timeout) {
+        // 带有阻塞时间，timeout时间内没有获取到令牌会走else逻辑
         if (limiter.tryAcquire(count, timeout, TimeUnit.SECONDS)) {
             log.info("success, rate is {}", limiter.getRate());
             return "success";
@@ -41,7 +47,7 @@ public class Controller {
         }
     }
 
-    // 同步阻塞限流
+    // 同步阻塞限流，请求一直阻塞直到获取到令牌
     @GetMapping("/acquire")
     public String acquire(Integer count) {
         limiter.acquire(count);

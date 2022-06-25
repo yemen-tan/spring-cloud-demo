@@ -9,5 +9,4 @@
 里面Browse repositories，在里面搜索lua，然后就选择同名插件lua。安装好后重启IDEA
 
 3. 配置Lua SDK的位置： IDEA->File->Project Structure,
-选择添加Lua，路径指向Lua SDK的bin文件夹，我本地的地址是：
-/usr/local/Cellar/lua/5.3.5_1/bin
+选择添加Lua，路径指向Lua SDK的bin文件夹，/usr/local/bin

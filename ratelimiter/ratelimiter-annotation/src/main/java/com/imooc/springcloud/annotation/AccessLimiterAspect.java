@@ -55,6 +55,7 @@ public class AccessLimiterAspect {
             Class[] type = method.getParameterTypes();
             key = method.getClass() + method.getName();
 
+            // 类+方法名+"#" + 参数类型（防止方法key重复）
             if (type != null) {
                 String paramTypes = Arrays.stream(type)
                         .map(Class::getName)
