@@ -21,9 +21,12 @@ public class Controller {
     // 每秒钟产生2个令牌
     RateLimiter limiter = RateLimiter.create(2.0);
 
+
+
     // 非阻塞限流
     @GetMapping("/tryAcquire")
     public String tryAcquire(Integer count) {
+
         // 每个请求消耗count个令牌
         if (limiter.tryAcquire(count)) {
             log.info("success, rate is {}", limiter.getRate());
@@ -37,7 +40,11 @@ public class Controller {
     // 限定时间的非阻塞限流
     @GetMapping("/tryAcquireWithTimeout")
     public String tryAcquireWithTimeout(Integer count, Integer timeout) {
-        // 带有阻塞时间，timeout时间内没有获取到令牌会走else逻辑
+        /*
+            1.带有阻塞时间，timeout时间内没有获取到令牌会走else逻辑
+            2.tryAcquire自带快速失败机制，当闯传入的count很大时，在timeout时间内不可能
+              产生那么多令牌是不会阻塞指定的时间而是马上返回失败
+         */
         if (limiter.tryAcquire(count, timeout, TimeUnit.SECONDS)) {
             log.info("success, rate is {}", limiter.getRate());
             return "success";
